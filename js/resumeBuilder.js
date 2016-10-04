@@ -4,7 +4,7 @@ var bio ={
 	"contacts" : {
 		"mobile" : "+44 7923 259298",
 		"email" : "isabelblancodura@gmail.com",
-		"linkedIn" : "https://uk.linkedin.com/in/isabel-blanco-durá-9a0690b7",
+		"linkedIn" : "linkedin.com/isabelblancodura",
 		"github" : "github.com/isabelblancodura",
 		"location" : "Southampton",
 	},

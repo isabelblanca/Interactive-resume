@@ -9,8 +9,8 @@ var HTMLheaderRole = '<span>%data%</span><hr/>';
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLlinkedIn = '<li class="flex-item"><span class="orange-text">linkedIn</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
+var HTMLlinkedIn = '<li class="flex-item"><span class="orange-text">linkedIn</span><span class="white-text"><a href="https://uk.linkedin.com/in/isabel-blanco-durá-9a0690b7" target="_blank">%data%</a></span></li>';
+var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text"><a href="https://github.com/isabelblanco" target="_blank">%data%</a></span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
