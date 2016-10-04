@@ -55,19 +55,19 @@ var bio ={
 var work = {
 	"jobs" :[
 		{
-			"employer" : "Costa Coffee",
-			"position" : "barista",
-			"dates" : "one year and half",
-			"location" : "Southampton",
-			"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat",
+			"employer" : "Kee ltd",
+			"position" : "Front End Developer",
+			"dates" : "Three months",
+			"location" : "Winchester,UK",
+			"description" : "This job has been my first oportunity like a Front-End. I was working hand by hand with the designer team, as I were the unique Front-End at the company.  I learnt as well to keep the smal eye details on a web site using PerfectPixel  Chrome extension."
 		},
 		{
-			"employer" : "Hilton Hotel",
-			"position" : "cleaner",
-			"dates" : "7 months",
-			"location" : "Barcelona",
-			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat"
-		},
+			"employer" : "Costa Coffee",
+			"position" : "Key Holder Barista",
+			"dates" : "one year and half",
+			"location" : "Southampton",
+			"description": "The Work in Costa Coffee have teached me quickly resolution of problems, work like a part of a team and specially organization skills. I were combining the job with web development learning, and my schedules on Costa were alternatives, so I needed to organize myself each day.",
+		}		
 	],
 	"display" : function() {
 		for (var job in work.jobs) {
@@ -152,20 +152,22 @@ var education ={
 var projects ={
 	"myProjects" :[
 		{
-			"title" : "Teacher appi",
-			"date" : "2014",
-			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat",
-			"pictures" :[
-
-			]
+			"title" : "Neighborhood Map",
+			"date" : "2015",
+			"description" : "The application consists of three main components: a Google Map, a Third Party API, and  a responsive design. The goal of this project was to add some of my favorite locations as markers on a Google Map. When the user clicks on the marker,  the most recent foursquare posts for the corresponding location will load into the user interface. All this content will  adapt and remain usable at various screen sizes.",
+			"link" : "http://isabelblanco.github.io/neighborhood-map/"
 		},
 		{
-			"title" : "portfolio",
-			"date" : "2014",
-			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat",
-			"pictures"  :[
-,
-			]
+			"title" : "Frogger",
+			"date" : "2015",
+			"description" : "Haz clic para editar la descripción del proyectoThis is a basic clone of the popular arcade game “Frogger”. All the Image Assets and game engine are provided and the objective is to create the mechanics of the game. ( Movement, Collision Detection, Animation, and Failure ). This project develops understanding of HTML5 Canvas, OOP and basic web-based game development.",
+			"link" : "http://isabelblanco.github.io/arcade-game/"
+		},
+		{
+			"title" : "Unit Testing",
+			"date" : "2015",
+			"description" : "The application consists of three main components: a Google Map, a Third Party API, and  a responsive design. The goal of this project was to add some of my favorite locations as markers on a Google Map. When the user clicks on the marker,  the most recent foursquare posts for the corresponding location will load into the user interface. All this content will  adapt and remain usable at various screen sizes.",
+			"link" : "http://isabelblanco.github.io/FeedReder/"
 		}
 	],
 	"display" : function() {
@@ -181,31 +183,9 @@ var projects ={
 			var formattedProjectDesc = HTMLprojectDescription.replace("%data%",projects.myProjects[project].description);
 			$(".project-entry:last").append(formattedProjectDesc);
 
-			if (projects.myProjects[project].pictures.length > 0) {
-				for (var image in projects.myProjects[project].pictures) {
-					var formattedProjectImg = HTMLprojectImage.replace("%data%",projects.myProjects[project].pictures[image]);
-					$(".project-entry:last").append(formattedProjectImg);
-				}
-			}
-		}
-		for (var project in projects.myProjects) {
-			$("#projects").append(HTMLprojectStart);
+			var formattedProjectLink = HTMLprojectLink.replace("%data%",projects.myProjects[project].link);
+			$(".project-entry:last").append(formattedProjectLink);
 
-			var formattedProjectTitle = HTMLprojectTitle.replace("%data%",projects.myProjects[project].title);
-			$(".project-entry:last").append(formattedProjectTitle);
-
-			var formattedProjectDate = HTMLprojectDates.replace("%data%",projects.myProjects[project].date);
-			$(".project-entry:last").append(formattedProjectDate);
-
-			var formattedProjectDesc = HTMLprojectDescription.replace("%data%",projects.myProjects[project].description);
-			$(".project-entry:last").append(formattedProjectDesc);
-
-			if (projects.myProjects[project].pictures.length > 0) {
-				for (var image in projects.myProjects[project].pictures) {
-					var formattedProjectImg = HTMLprojectImage.replace("%data%",projects.myProjects[project].pictures[image]);
-					$(".project-entry:last").append(formattedProjectImg);
-				}
-			}
 		}
 	}
 };
