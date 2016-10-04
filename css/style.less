@@ -194,6 +194,14 @@ ul {
 #projects {
   background-color: #D4BFA9;
 
+  .projectTitle {
+    color: #1199C3;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+  }
+
   .projectLink {
     color: #999;
     text-align: right;
@@ -201,6 +209,18 @@ ul {
 
     &:hover {
       font-weight: bold;
+    }
+  }
+
+  .jaguarlink {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 21px;
+    display: inline;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -229,11 +249,21 @@ span {
 
 #letsConnect {
   text-align: center;
-}
 
-@media only screen and (max-width: 1024px) {
-  #letsConnect {
-    margin-top: 5%;
+  @media (max-width: 780px) {
+    padding-top: 7px;
+  }
+
+  @media (max-width: 620px) {
+    padding-top: 13px;
+  }
+
+  @media (max-width: 490px) {
+    padding-top: 25px;
+  }
+
+  @media (max-width: 381px) {
+    padding-top: 61px;
   }
 }
 
@@ -244,9 +274,6 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #letsConnect {
-    margin-top: 10%;
-  }
   .biopic {
     width: 150px;
   }

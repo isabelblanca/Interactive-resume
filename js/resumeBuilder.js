@@ -89,46 +89,44 @@ var education ={
 			"name" : "Henry Matisse",
 			"location" : "Valencia",
 			"degree" : "Media Produccion",
-			"onlineInfo" : "www.henrymatisse.com"
+			"onlineInfo" : "http://ieshenrimatisse.es/joomla/index.php"
 		},
 		{
 			"name" : "La Marxadella",
 			"location" : "Torrent",
 			"degree" : "Multimedia Produccion",
-			"onlineInfo" : "www.lamarxadella.com"
+			"onlineInfo" : "http://marxadella.edu.gva.es/joomla/index.php"
+		},
+		{
+			"name" : "Udacity",
+			"location" : "Southampton",
+			"degree": "Front-End Developer Nanodegree",
+			"onlineInfo" : "https://www.udacity.com/"
 		}
 	],
 	"online":[
 		{
-			"title" : "Front End developer Nanodegree",
-			"school" : "Udacity",
-			"web" : "www.udacity.com",
-		},
-		{
-			"title" : "web development foundamentals",
+			"title" : "Advanced CSS3",
 			"school" : "Hilton University",
 			"web": "www.hiltonuniversity.com",
-		}
+		},
+		{
+			"title" : "Mobile First and Responsive Design",
+			"school" : "Udemy",
+			"web" : "www.udemy.com",
+		},
+				{
+			"title" : "CSS Flexbox Layout",
+			"school" : "Tree House",
+			"web" : "www.treehouse.com",
+		},
+		{
+			"title" : "Mobile First and Responsive Design",
+			"school" : "Udemy",
+			"web" : "www.udemy.com",
+		},
 	],
 	"display" : function() {
-		for (var school in education.schools) {
-			$("#education:last").append(HTMLschoolStart);
-			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
-			var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-			var formattedSchoolCity = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-			var formattedSchoolWeb = HTMLschoolDates.replace("%data%", education.schools[school].onlineInfo);
-
-			$(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree + formattedSchoolCity + formattedSchoolWeb + "<br>");
-		}
-		$(".education-entry:last").append(HTMLonlineClasses);
-
-		for (var course in education.online) {
-			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.online[course].title);
-			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.online[course].school);
-			var formattedOnlinedURL = HTMLonlineDates.replace("%data%", education.online[course].web);
-
-			$(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool + formattedOnlinedURL +"<br>");
-		}
 		for (var school in education.schools) {
 			$("#education:last").append(HTMLschoolStart);
 			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
@@ -164,10 +162,22 @@ var projects ={
 			"link" : "http://isabelblanco.github.io/arcade-game/"
 		},
 		{
-			"title" : "Unit Testing",
-			"date" : "2015",
-			"description" : "The application consists of three main components: a Google Map, a Third Party API, and  a responsive design. The goal of this project was to add some of my favorite locations as markers on a Google Map. When the user clicks on the marker,  the most recent foursquare posts for the corresponding location will load into the user interface. All this content will  adapt and remain usable at various screen sizes.",
-			"link" : "http://isabelblanco.github.io/FeedReder/"
+			"title" : "Spire Automotive",
+			"date" : "2016",
+			"description" : "During my time working with Kee ltd, I was in charge of the maintenance and uploads of this massive web page. As you can see, depend on the brand of car you are in, the layout and design change completly. One of my main tasks was change all the style on the <a href='http://www.spireautomotive.com/jaguar' class='jaguarlink' target=_blank>jaguar template</a>.",
+			"link" : "http://www.spireautomotive.com/"
+		},
+		{
+			"title" : "Zero60 Cars",
+			"date" : "2016",
+			"description" : "This is other example of my work at Kee. I was in charge of this site aswell. I created from zero the <a href='https://www.zero60cars.co.uk/contact-us' class='jaguarlink' target=_blank>contact us </a>section of the page and help the senior developer to create the slider on the main page",
+			"link" : "http://www.spireautomotive.com/"
+		},
+				{
+			"title" : "Other Projects",
+			"date" : "2016",
+			"description" : "You can see the rest of my projects on my gitHub page. As an example, a Web Optimization or Tests with jasmine.js ",
+			"link" : "http://github/isabelblanco/"
 		}
 	],
 	"display" : function() {
