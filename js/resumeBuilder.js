@@ -2,20 +2,26 @@ var bio ={
 	"name" : "Isabel Blanco",
 	"role" : "Front-End developer",
 	"contacts" : {
-		"mobile" : "07923 259298",
+		"mobile" : "+44 7923 259298",
 		"email" : "isabelblancodura@gmail.com",
-		"facebook" : "Isabel Blanca",
-		"twitter" : "isabel ibaurri",
+		"linkedIn" : "https://uk.linkedin.com/in/isabel-blanco-durá-9a0690b7",
+		"github" : "github.com/isabelblancodura",
 		"location" : "Southampton",
-		"github" : "isabelblancodura"
 	},
 	"picture" : "images/me.jpg" ,
 	"welcomeMessage" : "Hello, can I write some code for you?",
 	"skills" :[
-		"responsable",
-		"hard worker",
-		"enthusiastic",
-		"friendly"
+,
+		"HTML5",
+		"CSS3",
+		"JavaScript",
+		"Less",
+		"Bootstrap",
+		"jQuery",
+		"Git, gitHub",
+		"Knockout",
+		"jasmine.js",
+		"Responsive Design"
 	],
 	"display" : function(){
 		var formattedName = HTMLheaderName.replace("%data%",bio.name);
@@ -29,11 +35,12 @@ var bio ={
 
 		var formattedNumber = HTMLmobile.replace("%data%",bio.contacts.mobile);
 		var formattedEmail = HTMLemail.replace("%data%",bio.contacts.email);
-		var formattedFacebook = HTMLfacebook.replace("%data%",bio.contacts.facebook);
+		var formattedlinkedIn = HTMLlinkedIn.replace("%data%",bio.contacts.linkedIn);
+		var formattedGitHub = HTMLgithub.replace("%data%",bio.contacts.github);
 		var formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
 
-		$("#topContacts").append(formattedNumber + formattedEmail + formattedFacebook + formattedLocation);
-		$("#footerContacts").append(formattedNumber + formattedEmail + formattedFacebook + formattedLocation);
+		$("#topContacts").append(formattedNumber + formattedEmail + formattedlinkedIn + formattedGitHub + formattedLocation);
+		$("#footerContacts").append(formattedNumber + formattedEmail + formattedlinkedIn + formattedLocation);
 
 		$("#header").append(HTMLskillsStart);
 		for (skill in bio.skills) {
@@ -149,8 +156,7 @@ var projects ={
 			"date" : "2014",
 			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat",
 			"pictures" :[
-				"images/firstProject1.jpg",
-				"images/firstProject2.jpg"
+
 			]
 		},
 		{
@@ -158,8 +164,7 @@ var projects ={
 			"date" : "2014",
 			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat",
 			"pictures"  :[
-				"images/secondProject1.jpg",
-				"images/secondProject2.jpg"
+,
 			]
 		}
 	],
