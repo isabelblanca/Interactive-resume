@@ -177,7 +177,7 @@ var projects ={
 			"title" : "Other Projects",
 			"date" : "2016",
 			"description" : "You can see the rest of my projects on my gitHub page. As an example, a Web Optimization or Tests with jasmine.js ",
-			"link" : "http://github/isabelblanco/"
+			"link" : "http://github.com/isabelblanco"
 		}
 	],
 	"display" : function() {
