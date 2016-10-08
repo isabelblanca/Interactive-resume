@@ -151,7 +151,7 @@ var projects ={
 	"myProjects" :[
 		{
 			"title" : "Neighborhood Map",
-			"date" : "2015",
+			"img" : "images/NeightborhoodMap.png",
 			"description" : "The application consists of three main components: a Google Map, a Third Party API, and  a responsive design. The goal of this project was to add some of my favorite locations as markers on a Google Map. When the user clicks on the marker,  the most recent foursquare posts for the corresponding location will load into the user interface. All this content will  adapt and remain usable at various screen sizes.",
 			"link" : "http://isabelblanco.github.io/neighborhood-map/"
 		},
@@ -184,17 +184,20 @@ var projects ={
 		for (var project in projects.myProjects) {
 			$("#projects").append(HTMLprojectStart);
 
-			var formattedProjectTitle = HTMLprojectTitle.replace("%data%",projects.myProjects[project].title);
-			$(".project-entry:last").append(formattedProjectTitle);
+			$(".project-entry:last").append(HTMLstartImage)
 
-			var formattedProjectDate = HTMLprojectDates.replace("%data%",projects.myProjects[project].date);
-			$(".project-entry:last").append(formattedProjectDate);
+			var formattedProjectImg = HTMLprojectImg.replace("%data%", projects.myProjects[project].img);
+			$(".image:last").append(formattedProjectImg + HTMLstartTextInside);
+
+			var formattedProjectTitle = HTMLprojectTitle.replace("%data%",projects.myProjects[project].title);
+			$(".textInsideImage:last").append(formattedProjectTitle);
+			// console.log($(".image:last"));
 
 			var formattedProjectDesc = HTMLprojectDescription.replace("%data%",projects.myProjects[project].description);
-			$(".project-entry:last").append(formattedProjectDesc);
+			$(".textInsideImage:last").append(formattedProjectDesc);
 
 			var formattedProjectLink = HTMLprojectLink.replace("%data%",projects.myProjects[project].link);
-			$(".project-entry:last").append(formattedProjectLink);
+			$(".textInsideImage:last").append(formattedProjectLink);
 
 		}
 	}

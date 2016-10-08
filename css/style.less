@@ -95,10 +95,11 @@ a {
   font-size: 30px;
   color: #F3F3F3;
   line-height: 28px;
-  margin-left: 140px;
+  text-align: right;
+  margin-left: 245px;
 
     @media (max-width: 1024px) {
-      margin-left: 0;
+      margin-left: 326px;
   }
 }
 
@@ -187,9 +188,16 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
   width: 200px;
   display: none;
+  border-radius: 80px;
+  border: 10px #a96f47 solid;
+  padding: 7px;
+  transition: padding .5s;
+
+  &:hover {
+    padding: 0;
+  }
 }
 #projects {
   background-color: #D4BFA9;
@@ -224,9 +232,7 @@ ul {
     }
   }
 }
-#mapDiv {
-  background-color: #D4BFA9;
-}
+
 img {
   padding: 10px;
 }
@@ -283,14 +289,17 @@ span {
 }
 
 #map {
-  
   height: 100%;
+
+  @media (max-width: 1230px) {
+    height: 95%;
+  }
 }
 
 #mapDiv {
   height: 400px;
-  width: 100%;
   padding-bottom: 5%;
+  background-color: #D4BFA9;
 }
 
 @media only screen and (min-width: 750px) {
