@@ -21,17 +21,18 @@ body {
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: rgb(0,44,67);
   line-height: 48px;
   display: inline;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
   color: #999999;
   line-height: 29px;
   padding: 10px;
+  text-align: center;
 }
 
 h3 {
@@ -96,10 +97,10 @@ a {
   color: #F3F3F3;
   line-height: 28px;
   text-align: right;
-  margin-left: 245px;
+  margin-left: 25%;
 
-    @media (max-width: 1024px) {
-      margin-left: 326px;
+    @media (max-width: 920px) {
+      margin-left: 2%;
   }
 }
 
@@ -124,21 +125,9 @@ a {
   display: none;
 }
 
-#skills {
-  margin-bottom: 50px;
-}
-
 ul#skills li {
     padding-left: 20px;
     padding-bottom: 22px;
-}
-
-.orange {
-  background-color: #F5AE23;
-}
-
-.orange-text {
-  color: #F5AE23;
 }
 
 .white-text {
@@ -272,18 +261,16 @@ ul#skills li {
 }
 
 .gray {
-  background-color: #CCB299;
+
   padding-bottom: 10px;
   clear:both;
 }
 
-.dark-gray {
-  background-color: #66594C;
-}
+
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #66594C;
+  background-color: #0088cc;
 }
 
 .flex-box {
@@ -308,12 +295,13 @@ ul {
 
 .biopic {
   float: left;
-  width: 200px;
+  width: 144px;
   display: none;
   border-radius: 80px;
-  border: 10px #a96f47 solid;
+  border: 8px solid #0ac; 
   padding: 7px;
   transition: padding .5s;
+  background-color: rgb(0,187,204);
 
   &:hover {
     padding: 0;
@@ -372,6 +360,7 @@ img {
 
 span {
   padding: 5px;
+  color: rgb(106,205,255)
 }
 
 #letsConnect {

@@ -9,7 +9,7 @@ var bio ={
 		"location" : "Southampton",
 	},
 	"picture" : "images/me.jpg" ,
-	"welcomeMessage" : "Hello, can I write some code for you?",
+	"welcomeMessage" : "Can I write some code for you?",
 	"skills" :[
 ,
 		"HTML5",
@@ -27,9 +27,6 @@ var bio ={
 		var formattedName = HTMLheaderName.replace("%data%",bio.name);
 		$("#header").prepend(formattedName);
 
-		var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
-		$("#header").prepend(formattedRole);
-
 		var formattedImage = HTMLbioPic.replace("%data%", bio.picture);
 		$("#header").append(formattedImage);
 
@@ -37,10 +34,9 @@ var bio ={
 		var formattedEmail = HTMLemail.replace("%data%",bio.contacts.email);
 		var formattedlinkedIn = HTMLlinkedIn.replace("%data%",bio.contacts.linkedIn);
 		var formattedGitHub = HTMLgithub.replace("%data%",bio.contacts.github);
-		var formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
 
-		$("#topContacts").append(formattedNumber + formattedEmail + formattedlinkedIn + formattedGitHub + formattedLocation);
-		$("#footerContacts").append(formattedNumber + formattedEmail + formattedlinkedIn + formattedLocation);
+		$("#topContacts").append(formattedNumber + formattedEmail + formattedlinkedIn + formattedGitHub);
+		$("#footerContacts").append(formattedNumber + formattedEmail + formattedlinkedIn);
 
 		$("#header").append(HTMLskillsStart);
 		for (skill in bio.skills) {
