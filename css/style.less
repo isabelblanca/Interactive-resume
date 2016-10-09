@@ -151,6 +151,126 @@ ul#skills li {
   }
 }
 
+#projects {
+  color: #373737;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-size: 13px;
+
+  .project-entry {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+
+    @media (min-width: 600px ) {
+      width: 48%;
+      float: left;
+    }
+
+    @media (min-width: 1024px ) {
+      width: 33%;
+    }
+
+   .projectTitle {
+      font-size: 20.8px;  
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+    }
+          
+    .image {
+      position: relative;         
+      min-width: 100%;
+      padding: 0; 
+      max-width: 100%;    
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .textInsideImage {
+      background-color: rgba(0, 0, 0, 0.65);
+      color: #fff;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+      opacity: 0;
+      transition: opacity 1s;
+
+      button {
+        color: white;
+        background-color: rgba(74,137,202, .65);
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 70%;
+        height: 35px;
+        position: relative;
+        padding: 10px;
+        border: none;
+        border-radius: 1em;
+        opacity: 0;
+        transition: opacity .5s .2s, background .5s .3s, box-shadow .5s 0s;
+
+        .button-icon {
+          background: url(../img/download.svg);
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          left: 120px;
+          top: 6px; 
+          opacity: 0;             
+        }
+
+        &:hover {
+          background-color: rgba(74,137,202, 1);
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, .7);
+
+          .button-icon {
+            opacity: 1;
+            right: 31px;
+            left: 174px;
+            transition: opacity .7s .3s ease-out, left .7s .3s ease-out;
+          }
+        }
+
+        &:active {
+          background-color: #A33830;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+
+        button {
+          opacity: 1;
+        }
+      }
+
+      @media (min-width: 450px ) {
+        width: 48%;
+      }
+
+      @media (min-width: 1024px ) {
+        width: 33%;
+      }
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
 .gray {
   background-color: #CCB299;
   padding-bottom: 10px;
@@ -199,6 +319,7 @@ ul {
     padding: 0;
   }
 }
+
 #projects {
   background-color: #D4BFA9;
 

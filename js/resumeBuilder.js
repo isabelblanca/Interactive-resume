@@ -157,25 +157,25 @@ var projects ={
 		},
 		{
 			"title" : "Frogger",
-			"date" : "2015",
+			"img" : "images/frogger.png",
 			"description" : "Haz clic para editar la descripción del proyectoThis is a basic clone of the popular arcade game “Frogger”. All the Image Assets and game engine are provided and the objective is to create the mechanics of the game. ( Movement, Collision Detection, Animation, and Failure ). This project develops understanding of HTML5 Canvas, OOP and basic web-based game development.",
 			"link" : "http://isabelblanco.github.io/arcade-game/"
 		},
 		{
 			"title" : "Spire Automotive",
-			"date" : "2016",
+			"img" : "images/spire.png",
 			"description" : "During my time working with Kee ltd, I was in charge of the maintenance and uploads of this massive web page. As you can see, depend on the brand of car you are in, the layout and design change completly. One of my main tasks was change all the style on the <a href='http://www.spireautomotive.com/jaguar' class='jaguarlink' target=_blank>jaguar template</a>.",
 			"link" : "http://www.spireautomotive.com/"
 		},
 		{
 			"title" : "Zero60 Cars",
-			"date" : "2016",
+			"img" : "images/zero60.png",
 			"description" : "This is other example of my work at Kee. I was in charge of this site aswell. I created from zero the <a href='https://www.zero60cars.co.uk/contact-us' class='jaguarlink' target=_blank>contact us </a>section of the page and help the senior developer to create the slider on the main page",
 			"link" : "http://www.spireautomotive.com/"
 		},
 				{
 			"title" : "Other Projects",
-			"date" : "2016",
+			"img" : "images/otherProjects.png",
 			"description" : "You can see the rest of my projects on my gitHub page. As an example, a Web Optimization or Tests with jasmine.js ",
 			"link" : "http://github.com/isabelblanco"
 		}
